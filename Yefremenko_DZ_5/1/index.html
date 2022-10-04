@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+    padding: 5px;
+    border: 2px solid black;
+    margin: 5px;
+    }
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .flex-container div{
+      width: 25%
+    }
+    @media (min-width: 400px) {
+      .item_1, .item_3 {
+        flex-basis: 25%;
+      }
+      .item_2, .item_4 {
+        flex-basis: 12.5%;
+      }
+    }
+    @media (min-width: 500px) {
+      .item_1, .item_3 {
+        flex-basis: 25%;
+      }
+      .item_2, .item_4 {
+        flex-basis: 25%;
+      }
+    }
+    @media (min-width: 600px) {
+      .item_1, .item_2 {
+        flex-basis: 20%;
+      }
+      .item_3, .item_4 {
+        flex-basis: 30%;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item_1">Flex item 1</div>
+    <div class="item_2">Flex item 2</div>
+    <div class="item_3">Flex item 3</div>
+    <div class="item_4">Flex item 4</div>
+  </div>
+</body>
+</html>
